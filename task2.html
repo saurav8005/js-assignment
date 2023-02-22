@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Task2</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="task2.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="reactangle" id="main-div">
+
+        </div>
+        <input type="text" id="input-text" />
+        <button id="btn-color">Change Color</button>
+        <button id="add-square">Add Child</button>
+        <button id="remove">Remove Child</button>
+    </div>
+
+    <script>
+        let changebackground = document.getElementById("main-div");
+        let color = document.getElementById("btn-color");
+        let add = document.getElementById("add-square");
+        let remove = document.getElementById("remove");
+
+        color.addEventListener('click', function colorChange() {
+            let input = document.getElementById("input-text").value;
+            changebackground.style.background = input;
+        })
+         
+        
+        let square ;
+        
+
+        
+    
+
+        add.addEventListener('click', function addSquare() {
+            let makeSquare = document.getElementById("main-div");
+            square = document.createElement('div')
+            square.style.cssText = 'width:50px;height:50px;background:yellow;display:inline-flex;margin:5px;'
+            makeSquare.appendChild(square)
+            console.log("called")
+
+        })
+
+
+
+        remove.addEventListener('click', function removeSquare() {
+            let makeSquare = document.getElementById("main-div");
+            makeSquare.removeChild(square)
+            console.log("removedcalled")
+
+        })
+    </script>
+</body>
+
+</html>

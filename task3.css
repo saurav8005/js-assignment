@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+h1 {
+    margin: 0;
+}
+#main-div {
+    background-color: dodgerblue;
+    text-align: center;
+    height: 60px;
+}
+.search-bar {
+    margin-top: 30px;
+    text-align: center;
+}
+#result {
+    margin-top: 30px;
+    text-align: center;
+}
